@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metacar"
+authors = [
+  { name="YDL-Simulation", email="connie.ma@i-mylab.com" },
+]
+description = "智能网联平台API"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+dynamic = ["version"]
+dependencies = [
+    "keyboard>=0.13.5",
+    "numpy>=2.0.0",
+    "opencv-python>=4.5.0",
+    "pydantic>=2.0.0",
+    "scipy>=1.15.3",
+    "ultralytics>=8.0.0",
+    "paddleocr>=2.7.0",
+    "paddlepaddle>=2.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/YDL-Simulation/autodrive_api_python"
+Issues = "https://github.com/YDL-Simulation/autodrive_api_python/issues"
+
+[tool.hatch.version]
+path = "metacar/__init__.py"

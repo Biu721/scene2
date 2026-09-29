@@ -1,0 +1,5 @@
+Scene B Detection Report
+Frame: 878
+Violating IDs: B-02, B-05
+Debug - Loop1: ['B-02', 'B-05']
+Debug - Loop2: []
